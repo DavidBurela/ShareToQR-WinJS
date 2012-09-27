@@ -22,8 +22,21 @@
         var thumbnail;
 
         if (args.detail.kind === Windows.ApplicationModel.Activation.ActivationKind.shareTarget) {
-            document.querySelector(".submitbutton").onclick = onShareSubmit;
             share = args.detail.shareOperation;
+            
+            if (share.data.contains(Windows.ApplicationModel.DataTransfer.StandardDataFormats.uri)) {
+                share.data.getUriAsync().then(function (uri) {
+                    if (uri != null) {
+                        var uriString = uri.rawUri;
+                        // Find the QR canvas, and set it as the data sent in the share contract
+                        jQuery('#qrcodeCanvas').qrcode({
+                            text: uriString
+                        });
+                    }
+                });
+            }
+
+            document.querySelector(".submitbutton").onclick = onShareSubmit;
 
             document.querySelector(".shared-title").textContent = share.data.properties.title;
             document.querySelector(".shared-description").textContent = share.data.properties.description;
