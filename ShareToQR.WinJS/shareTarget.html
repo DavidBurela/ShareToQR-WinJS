@@ -13,7 +13,7 @@
     <link href="/css/default.css" rel="stylesheet" />
     <link href="shareTarget.css" rel="stylesheet" />
     <script src="shareTarget.js"></script>
-    
+
     <script src="Scripts/jquery-1.8.2.min.js"></script>
     <script src="Scripts/jquery.qrcode.min.js"></script>
 </head>
@@ -21,22 +21,13 @@
     <!-- The content that will be loaded and displayed. -->
     <section aria-label="Main content" role="main">
         <header>
-            <div>
-                <img class="shared-thumbnail" src="#" alt="share metadata image" />
-            </div>
             <div class="shared-metadata">
                 <h2 class="shared-title win-type-ellipsis"></h2>
                 <h4 class="shared-description"></h4>
             </div>
         </header>
 
-        <input class="commentbox" placeholder="Add a comment" type="text" />
         <div class="sharecontrols">
-            <div class="progressindicators">
-                <progress></progress>
-                <span>Sharing...</span>
-            </div>
-            <input class="submitbutton" type="button" value="Share" />
             <div id="qrcodeCanvas"></div>
         </div>
     </section>
