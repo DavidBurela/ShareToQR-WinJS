@@ -1,48 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-
-  <Identity
-    Name="fccd3b66-88b6-4525-b7dd-d0adff1fbbae"
-    Version="1.0.0.0"
-    Publisher="CN=David" />
-
+  <Identity Name="fccd3b66-88b6-4525-b7dd-d0adff1fbbae" Version="1.0.0.0" Publisher="CN=David" />
   <Properties>
     <DisplayName>ShareToQR.WinJS</DisplayName>
     <PublisherDisplayName>David</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
-
   <Prerequisites>
     <OSMinVersion>6.2.1</OSMinVersion>
     <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
   </Prerequisites>
-
   <Resources>
     <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application 
-      Id="App"
-      StartPage="default.html">
-
-      <VisualElements
-        DisplayName="ShareToQR.WinJS"
-        Logo="images\logo.png"
-        SmallLogo="images\smalllogo.png"
-        Description="ShareToQR.WinJS"
-        ForegroundText="light"
-        BackgroundColor="#464646">
-
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="ShareToQR.WinJS" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="ShareToQR.WinJS" ForegroundText="light" BackgroundColor="#464646">
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="images\splashscreen.png" />
-
       </VisualElements>
+      <Extensions>
+        <Extension Category="windows.shareTarget" StartPage="shareTarget.html">
+          <ShareTarget>
+            <DataFormat>text</DataFormat>
+            <DataFormat>uri</DataFormat>
+          </ShareTarget>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
-
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
-
 </Package>

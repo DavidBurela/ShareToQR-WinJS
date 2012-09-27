@@ -65,6 +65,9 @@
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\jquery.qrcode.min.js" />
+    <Content Include="shareTarget.css" />
+    <Content Include="shareTarget.html" />
+    <Content Include="shareTarget.js" />
     <None Include="ShareToQR.WinJS_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
