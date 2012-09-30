@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="fccd3b66-88b6-4525-b7dd-d0adff1fbbae" Version="1.0.0.0" Publisher="CN=David" />
+  <Identity Name="50172DavidBurela.SendToQRCode" Version="1.0.0.1" Publisher="CN=A8C2CAA2-03A9-471C-9265-FD6C0B3EFD8C" />
   <Properties>
-    <DisplayName>ShareToQR.WinJS</DisplayName>
-    <PublisherDisplayName>David</PublisherDisplayName>
+    <DisplayName>Send To QR Code</DisplayName>
+    <PublisherDisplayName>David Burela</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,8 +15,8 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="ShareToQR.WinJS" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="ShareToQR.WinJS" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
+      <VisualElements DisplayName="Share To QR" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="ShareToQR.WinJS" ForegroundText="dark" BackgroundColor="#464646">
+        <DefaultTile ShowName="logoOnly" />
         <SplashScreen Image="images\splashscreen.png" />
       </VisualElements>
       <Extensions>
