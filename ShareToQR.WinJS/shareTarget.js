@@ -26,10 +26,21 @@
                 });
             }
 
-            document.querySelector(".shared-title").textContent = share.data.properties.title;
-            document.querySelector(".shared-description").textContent = share.data.properties.description;
-
+            if (share.data.contains(Windows.ApplicationModel.DataTransfer.StandardDataFormats.text)) {
+                share.data.getTextAsync().then(function (text) {
+                    if (text != null) {
+                        // Find the QR canvas, and set it as the data sent in the share contract
+                        jQuery('#qrcodeCanvas').qrcode({
+                            text: text
+                        });
+                    }
+                });
+            }
         }
+
+        document.querySelector(".shared-title").textContent = share.data.properties.title;
+        document.querySelector(".shared-description").textContent = share.data.properties.description;
+
     };
 
     app.start();
