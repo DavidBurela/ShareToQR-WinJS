@@ -1,0 +1,6 @@
+Once this application (Share To QR) is installed.
+*Open Internet Explorer
+*Navigate to http://www.Microsoft.com
+*Open the share charm
+*Select Share To QR from share charm bar. 
+A QR code will be generated for the user.
