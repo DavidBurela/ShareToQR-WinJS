@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Share To QR" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Share text and URLs with other devices via a QR code! Simply select &quot;Share&quot; from the Charms bar and click on the &quot;Share To QR&quot; icon." ForegroundText="dark" BackgroundColor="#464646">
+      <VisualElements DisplayName="Share To QR" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Share text and URLs with other devices via a QR code! Simply select &quot;Share&quot; from the Charms bar and click on the &quot;Share To QR&quot; icon." ForegroundText="dark" BackgroundColor="#FFFFFF">
         <DefaultTile ShowName="logoOnly" />
         <SplashScreen Image="images\splashscreen.png" />
       </VisualElements>
